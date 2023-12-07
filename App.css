@@ -1,0 +1,104 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.custom-button {
+  background-color: rgb(18, 92, 177);
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.custom-button:hover {
+  background-color: #9521f3;
+}
+
+.button {
+  background-color: rgb(18, 177, 39);
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dinosaur-game {
+  position: relative;
+  width: 400px;
+  height: 150px;
+  background: #f7f7f7;
+  border: 1px solid #e3e3e3;
+  overflow: hidden;
+}
+
+.dinosaur {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #666;
+  transition: 0.2s;
+}
+
+.dinosaur.jumping {
+  bottom: 100px;
+}
+
+.obstacle {
+  width: 30px;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #666;
+  animation: moveObstacle 1s linear infinite;
+}
+
+.animate {
+  animation-play-state: paused;
+}
+
+@keyframes moveObstacle {
+  from {
+    right: 0;
+  }
+  to {
+    right: 100%;
+  }
+  
+}
+
+/* styles.css */
+.character-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.character-table th, .character-table td {
+  border: 1px solid #55d11b;
+  padding: 8px;
+  text-align: left;
+}
+
+.character-table th {
+  background-color: #0deb1f;
+}
